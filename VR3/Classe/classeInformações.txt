@@ -1,0 +1,19 @@
+getter: esse método é utilizado quando queremos acessar o valor de uma propriedade de um objeto.
+
+setter: esse método é utilizado quando queremos alterar o valor de uma propriedade de um objeto.
+
+/*******************Classe Abstrata****************************/
+
+
+As classes abstratas não permitem realizar qualquer tipo de instância, elas são utilizadas como modelos para outras classes, que são conhecidas como classes concretas.
+
+Para tornar a nossa classe ​ ​Conta​ ​ abstrata, basta adicionar a palavra reservada ​ ​abstract​ ​ na frente da palavra reservada ​ ​class​ ​:
+
+Agora a nossa classe ​ ​Conta​ ​ será somente um modelo para criação de outras classes, ela não pode mais ser instanciada. Caso você tente instanciá-la, deve receber o seguinte erro:
+
+/******************* Readonly Atributo ****************************/
+
+Analisando os possíveis ajustes na classe ​ ​Conta​ ​, notamos que está faltando mais um ponto. O atributo ​ ​_numeroDaConta​ ​ está como privado, mas nada impede que algum outro método dentro da própria classe altere o seu valor. Como resolver esse problema?
+
+Para isso, temos a palavra reservada ​ ​readonly​ ​, que faz com que uma propriedade dentro de uma classe seja utilizada como somente leitura. Uma vez setado o seu valor, ele não pode ser alterado.
+

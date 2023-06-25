@@ -1,0 +1,16 @@
+npm install -g typecript
+tsc "nome do arquivo" - serve para criar um arquivo em js para rodar como node
+tsc --init - cria o arquivo tsconfig.json
+
+###############################
+
+"compilerOptions": {
+    /*outras configurações*/ 
+    "noEmitOnError": true,
+}
+Essa configuração fará com que o compilador analise o seu código e, caso ele encontre algum erro, não crie o arquivo ​ ​.js​ ​.
+dentro do arquivo - tsconfig.ts - entrar em  noEmitOnError serve para não criar os arquivos em js se estiver com erro no arquivo ts
+
+##############################
+
+tsc -w -> criar um link de correção dos arquivo
