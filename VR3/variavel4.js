@@ -16,7 +16,7 @@ de uma classe que herda de uma outra classe.
 
 */
 class Conta {
-    /* NOS PRECIAMOS CRIAR UM CONSTRUTOR PARA A NOSSA CLASSE ATRIBUIR
+    /* NOS PRECISAMOS CRIAR UM CONSTRUTOR PARA A NOSSA CLASSE ATRIBUIR
         OS VALORES DO SEU PARÂMETRO AOS NOSSO ATRIBUTOS */
     constructor(titular, saldo) {
         this._numeroDaConta = Math.floor(Math.random() * 1000) + 1;
@@ -52,8 +52,8 @@ via construtor para o construtor da nossa classe pai.
 /*
 
 Note que, quando você implementou a interface ​ ​Tributavel​ ​, o compilador identificou que dentro desse contrato
- tem um método chamado ​ ​CalculaTributo()​ ​ e sublinhou a classe em vermelho passando a notificação de que o
- método deve ser implementado:
+tem um método chamado ​ ​CalculaTributo()​ ​ e sublinhou a classe em vermelho passando a notificação de que o
+método deve ser implementado:
 
 */
 class ContaPF extends Conta {
@@ -88,7 +88,8 @@ class ContaPJ extends Conta {
         return this.consultarSaldo() + 0.05;
     }
 }
-/* PARA CRIAR UM OBJETO A PARTIR DA NOSSA CLASSE, NOS PRECISAMOS INSTANCIÁ-LA.  CRIANDO UMA PALAVRA NEW PARA INSTANCIAR, E CRIAR UM NOVO OBJETO A PARTIR DE UMA DETERMINADA CLASSE */
+/* PARA CRIAR UM OBJETO A PARTIR DA NOSSA CLASSE, NOS PRECISAMOS INSTANCIÁ-LA.
+CRIANDO UMA PALAVRA NEW PARA INSTANCIAR, E CRIAR UM NOVO OBJETO A PARTIR DE UMA DETERMINADA CLASSE */
 const pessoaJuridica = new ContaPJ(395165185, 'Marcelo Perini', 30000);
 console.log(pessoaJuridica.cnpj);
 console.log(`O numero da conta é ${pessoaJuridica.numeroDaconta}`);

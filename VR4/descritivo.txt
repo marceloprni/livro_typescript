@@ -1,0 +1,20 @@
+Criar a imagem docker 
+docker pull tutum/mongodb
+
+Criar o container
+docker run -d -p 27017:27017 -p 28017:28017 -e AUTH=no tutum/mongodb
+
+run​ ​: esse comando é utilizado para a criação de um contêiner. ​ 
+​-d​ ​: esse parâmetro está informando que o contêiner tem que rodar em background. ​ 
+​-p​ ​: devemos utilizar esse parâmetro para especificar a porta que vamos utilizar 
+para conectar no nosso contêiner. A porta que está antes dos ​ ​:​ ​ 
+é a do nosso host e a que está depois é a que vamos utilizar para acessar o nosso contêiner.
+
+docker image - ver as imagem operando
+docker ps - ver os container rodando
+
+database: base de dados.
+ collections: para quem trabalha ou já teve contato com um banco de dados SQL, 
+seriam as nossas tabelas, mas pensando em quem está começando na área, uma collection seria uma coleção de dados. 
+fields: seriam as propriedades das nossas classes, 
+que quando forem mapeadas para a nossa collection serão os campos onde armazenaremos os valores.
