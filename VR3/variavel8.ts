@@ -26,7 +26,7 @@ abstract class Conta {
     titular: string;
     private _saldo: number;
 
-    /* NOS PRECISAMOS CRIAR UM CONSTRUTOR PARA A NOSSA CLASSE ATRIBUIR 
+    /* NOS PRECISAMOS CRI AR UM CONSTRUTOR PARA A NOSSA CLASSE ATRIBUIR 
         OS VALORES DO SEU PARÂMETRO AOS NOSSO ATRIBUTOS */
     constructor(titular: string, saldo: number) {
             this._numeroDaConta = Math.floor( Math.random() * 1000) + 1;

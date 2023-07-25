@@ -18,3 +18,6 @@ database: base de dados.
 seriam as nossas tabelas, mas pensando em quem está começando na área, uma collection seria uma coleção de dados. 
 fields: seriam as propriedades das nossas classes, 
 que quando forem mapeadas para a nossa collection serão os campos onde armazenaremos os valores.
+
+para desintalar um pacote 
+npm uninstall "mongodb" - nome do pacote
