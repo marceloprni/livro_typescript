@@ -1,14 +1,16 @@
+import { injectable, inject } from "tsyringe";
+import { IGaleriaService } from "../contracts/iGalarieService";
 import { Request, Response } from "express";
 import { GaleriaService } from "../services/galeriaService";
 
-
+@injectable()
 class GaleriaController {
 
-    private _service: GaleriaService;
 
-    constructor() {
+    constructor(@inject('IGaleriaService') private _service: IGaleriaService)
+        {
         this._service = new GaleriaService();
-    }
+         }
 
     async get(request: Request, response: Response) {
         try {
@@ -29,7 +31,7 @@ class GaleriaController {
             response.status(200).json({ result });
 
         } catch (error) {
-            response.status(500).json({ error: error.messagerror.message || error.toString() });
+            response.status(500).json({ error: error.message|| error.toString() });
         }
     }
 }

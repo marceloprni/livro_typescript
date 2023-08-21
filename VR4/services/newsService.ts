@@ -5,7 +5,12 @@ import { News } from "../models/news";
 
 
 export class NewsService implements INewsService {
-    
+
+    constructor(acomplamento: string) {
+        console.log(acomplamento);
+    }
+
+ 
     async get(_id: string): Promise<News> {
         let result = await NewsRepository.findById(_id);
         return result;

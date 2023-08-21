@@ -1,12 +1,15 @@
+import { injectable, inject } from "tsyringe";
+import { IVideosService } from "../contracts/iVideosService";
 import { Request, Response } from "express";
 import { VideosService } from "../services/videosService";
 
-
+@injectable()
 class VideosController {
 
-    private _service: VideosService;
 
-    constructor() {
+
+    constructor(@inject('IVideosService') private _service: IVideosService)
+        {
         this._service = new VideosService();
     }
 
